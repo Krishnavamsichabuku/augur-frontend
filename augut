@@ -1,16 +1,7 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import App from './App';
+import {createRoot} from "react-dom/client";
 
-const Header = () => (
-  <AppBar position="static">
-    <Toolbar>
-      <Typography variant="h6">
-        Augur System Dashboard
-      </Typography>
-    </Toolbar>
-  </AppBar>
-);
+const root = createRoot(document.getElementById('root'));
 
-export default Header;
+root.render(<App/>);
